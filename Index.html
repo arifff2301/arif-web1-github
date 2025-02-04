@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Kopi Mimiw</title>
+    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan ke file CSS -->
+</head>
+<body>
+    <header id="navbar"> <!-- Tambahkan ID untuk JS -->
+<div class="logo" id="logo">
+    <img src="miw.jpg" alt="Logo Warkop" class="logo-img">
+    <span class="animated-text">
+        <span>W</span><span>A</span><span>R</span><span>K</span><span>O</span><span>P</span>
+        <span style="margin: 0 5px;"></span> <!-- Spasi -->
+        <span>M</span><span>I</span><span>W</span>
+    </span>
+</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Selamat Datang di Warkop Kami</h1>
+        <p>Kunjungilah warkop kami untuk mengetahui layanan terbaik kami!!!</p>
+    </section>
+
+<section id="menu" class="menu">
+    <h2>Menu</h2>
+    <div class="menu-grid"> 
+        <!-- Baris Pertama -->
+        <div class="menu-item" data-description="Kopi hitam khas warkop.">
+            <img src="kopi.jpg" alt="Kopi">
+            <h3>Kopi Hitam</h3>
+            <p class="price">Rp10.000</p>
+        </div>
+        <div class="menu-item" data-description="Teh hangat manis segar.">
+            <img src="teh.jpg" alt="Teh">
+            <h3>Teh Hangat</h3>
+            <p class="price">Rp8.000</p>
+        </div>
+        <div class="menu-item" data-description="Jus jeruk segar alami.">
+            <img src="jeruk.jpg" alt="Jeruk">
+            <h3>Es Jeruk</h3>
+            <p class="price">Rp12.000</p>
+        </div>
+        <div class="menu-item" data-description="Es teler segar.">
+            <img src="es.jpg" alt="Es teler">
+            <h3>Es Teler</h3>
+            <p class="price">Rp15.000</p>
+        </div>
+
+        <!-- Baris Kedua -->
+        <div class="menu-item" data-description="Sosis bakar gurih.">
+            <img src="sosis.jpg" alt="Sosis">
+            <h3>Sosis Bakar</h3>
+            <p class="price">Rp13.000</p>
+        </div>
+        <div class="menu-item" data-description="Mie instan pedas mantap.">
+            <img src="mie.jpg" alt="Mie">
+            <h3>Mie goreng</h3>
+            <p class="price">Rp11.000</p>
+        </div>
+        <div class="menu-item" data-description="Gorengan bawang renyah.">
+            <img src="bawang.jpg" alt="Bawang">
+            <h3>Bawang krispy</h3>
+            <p class="price">Rp5.000</p>
+        </div>
+        <div class="menu-item" data-description="Roti bakar lezat.">
+            <img src="roti.jpg" alt="Roti bakar">
+            <h3>Roti Bakar</h3>
+            <p class="price">Rp14.000</p>
+        </div>
+    </div>
+</section>
+
+    <section id="about" class="about">
+        <h2>Tentang Kami</h2>
+        <p>Kami adalah warung kopi klasik yang menyediakan berbagai macam makanan minuman dan kami juga melayani pelanggan kami dengan baik dan cepat.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Layanan Kami</h2>
+        <ul>
+            <li>• Menjual aneka makanan</li>
+            <li>• Tersedia Wi-Fi gratis</li>
+            <li>• Menjual aneka minuman</li>
+        </ul>
+    </section>
+
+<footer id="contact">
+    <h2>Kontak Kami</h2>
+<p>pemesanan: <a href="#" class="pemesanan-highlight" onclick="showOrderForm()">pesan di sini</a> | Telepon: +62 847-890-7658</p>
+</footer>
+
+    
+    <script src="
+script.js"></script> <!-- Menghubungkan ke file JS -->
+</body>
+</html>

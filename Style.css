@@ -1,0 +1,479 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;  /* Font klasik */
+}
+
+/* Background ala warkop */
+body {
+    background-color: #EFE5D8; /* Warna krem lembut */
+    background-image: linear-gradient(rgba(30, 20, 10, 0.6), rgba(30, 20, 10, 0.6)), url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Efek parallax */
+    color: #3E3E3E;  /* Warna teks netral */
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: rgba(78, 52, 46, 0.95); /* Cokelat tua */
+    color: #EFE5D8; /* Kontras dengan latar belakang */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Gaya untuk Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: #D4AF37;  /* Warna emas */
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #D4AF37;
+}
+
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul.menu li a {
+    text-decoration: none;
+    color: #EFE5D8;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+    gap: 20px;
+    padding: 20px;
+    text-align: center; 
+}
+
+.menu-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu-item .price {
+    font-size: 16px;
+    color: #dd652e; /* Warna biru untuk harga */
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('coffee_bg.jpg') no-repeat center center/cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 30px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #4A4A4A;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #FFA500;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.menu-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Menu Grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.menu-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.item-price {
+    font-size: 16px;
+    color: #FFA500;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #FFA500;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+nav ul.menu li a:hover {
+    background-color: #D4AF37;  /* Emas saat hover */
+    color: #4E342E;
+}
+
+/* Tata letak grid untuk menu */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolom per baris */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+    background-color: #f5e1c0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk gambar menu */
+.menu-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Efek hover */
+.menu-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsif untuk laptop kecil */
+@media (max-width: 1366px) {
+    .menu-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+    }
+}
+
+/* Responsif untuk tablet */
+@media (max-width: 1024px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    }
+}
+
+/* Responsif untuk smartphone */
+@media (max-width: 600px) {
+    .menu-grid {
+        grid-template-columns: 1fr; /* 1 kolom */
+    }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #4E342E;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #5D4037;
+}
+
+/* Menu Section */
+.menu {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(210, 180, 140, 0.9);  /* Warna cokelat muda */
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.menu h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #4E342E;
+    border-bottom: 2px solid #D4AF37;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    position: relative;
+}
+
+/* Gambar bulat */
+.menu-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4E342E;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Tentang Kami dan Layanan */
+.about, .services {
+    padding: 20px;
+    background-color: rgba(239, 229, 216, 0.95);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.about h2, .services h2 {
+    color: #4E342E;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.services li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #5D4037;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(78, 52, 46, 0.95); /* Cokelat tua */
+    color: #EFE5D8;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    nav ul.menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .menu-item img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Deskripsi saat hover di menu */
+.menu-description {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menu-item:hover .menu-description {
+    opacity: 1;
+}
+
+/* Efek fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.email-highlight {
+    color: orange;          /* Warna oranye */
+    font-weight: bold;      /* Membuat teks lebih tebal */
+    text-decoration: none;  /* Menghapus garis bawah */
+    transition: color 0.3s; /* Efek transisi saat hover */
+}
+
+.email-highlight:hover {
+    color: darkorange;      /* Warna oranye lebih gelap saat di-hover */
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+/* Animasi untuk teks logo */
+.animated-text span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px); /* Mulai dari bawah */
+    animation: fadeInUp 5s forwards infinite alternate; /* Animasi berulang */
+}
+
+/* Delay untuk setiap huruf agar muncul berurutan */
+.animated-text span:nth-child(1) { animation-delay: 0.1s; }
+.animated-text span:nth-child(2) { animation-delay: 0.2s; }
+.animated-text span:nth-child(3) { animation-delay: 0.3s; }
+.animated-text span:nth-child(4) { animation-delay: 0.4s; }
+.animated-text span:nth-child(5) { animation-delay: 0.5s; }
+.animated-text span:nth-child(6) { animation-delay: 0.6s; }
+.animated-text span:nth-child(8) { animation-delay: 0.7s; } /* M */
+.animated-text span:nth-child(9) { animation-delay
+: 0.8s; } /* I */
+.animated-text span:nth-child(10) { animation-delay: 0.9s; } /* W */
+
+/* Keyframe untuk efek fade-in ke atas, lalu menghilang ke bawah */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Muncul dari bawah */
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);    /* Di posisi normal */
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px); /* Menghilang ke atas */
+    }
+}
+ 
